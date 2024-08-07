@@ -1,4 +1,4 @@
-name: "Terraform Test"
+name: "Terraform Apply"
 
 on:
     push:
@@ -69,7 +69,7 @@ jobs:
                 name: terraform-plan
                 path: .
             
-            - name: Terraform Aplying
-              run: terraform aplly auto-aprove terraform.plan
+            - name: Terraform Applying
+              run: terraform apply auto-aprove terraform.plan
 
             
