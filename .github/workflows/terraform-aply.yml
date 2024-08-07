@@ -70,6 +70,6 @@ jobs:
                 path: .
             
             - name: Terraform Applying
-              run: terraform apply -auto-aprove terraform.plan
+              run: terraform apply -auto-approve terraform.plan
 
             
