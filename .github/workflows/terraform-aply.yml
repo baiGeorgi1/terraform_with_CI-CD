@@ -56,6 +56,11 @@ jobs:
             # Checkout the repository to the GitHub Actions runner
             - name: Checkout
               uses: actions/checkout@v4
+              
+            - name: Azure login
+              uses: azure/login@v2
+              with:
+                  creds: ${{ secrets.AZURE_CREDENTIALS }}
 
             - name: Setup Terraform
               uses: hashicorp/setup-terraform@v3
